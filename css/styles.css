@@ -1,8 +1,17 @@
 :root{
+    --fontBase: 'Poppins', sans-serif;
+    --headline1: bold 95px/153.71px var(--fontBase);
+    --headline2: bold 59px/95.46px var(--fontBase);
+    --headline3: bold 48px/77.66px var(--fontBase);
+    --headline4: bold 34px/55.01px var(--fontBase);
+    --headline5: bold 24px/38.83px var(--fontBase);
+    --body1: 400 16px/25.89px var(--fontBase);
+    --body2: 400 14px/22.65px var(--fontBase);
+    --button: bold 14px/22.65px var(--fontBase);
+    --caption: 400 12px/19.42px var(--fontBase);
     --purple: #310A90;
+    --green: #42E2B8;
     --white: #FFFFFF;
-    --headline5: 24px;
-    --headline3: 48px;
 }
 
 *{
@@ -11,7 +20,20 @@
 
 body{
     background: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+    font: var(--body1);
     min-block-size: 100vh;
+}
+
+h5, h4, h3, h2, h1, p{
+    color: var(--purple);
+}
+
+button{
+    background: var(--purple);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    outline: none;
 }
 
 header{
@@ -22,16 +44,10 @@ header{
 }
 
 header button{
-    background-color: var(--purple);
     border-radius: 4px;
-    border: none;
-    color: var(--white);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font: var(--button);
     letter-spacing: 1.25px;
-    outline: none;
     padding: 13px 24px;
-    cursor: pointer;
     text-transform: uppercase;
 }
 
@@ -43,28 +59,19 @@ main .main__photo{
     width: 100%;
 }
 
-main > h5, h3, p{
-    font-family: 'Puppins', sans-serif;
-    color: var(--purple);
-}
-
 main h5{
-    font-size: var(--headline5);
-    line-height: 39px;
+    font: var(--headline5);
     margin-top: 20px;
     margin-bottom: 0px;
 }
 
 main h3{
-    font-size: var(--headline3);
-    line-height: 78px;
+    font: var(--headline3);
     margin-top: 0px;
     margin-bottom: 20px;
 }
 
 main p{
-    font-weight: 400;
-    line-height: 26px;
     letter-spacing: 0.5px;
     margin-bottom: 16px;
 }
@@ -76,15 +83,9 @@ main p{
 }
 
 main button{
-    background-color: var(--purple);
-    border: none;
     border-radius: 4px;
-    cursor: pointer;
-    color: var(--white);
-    font-size: 14px;
+    font: var(--button);
     letter-spacing: 1.25px;
-    line-height: 22.65px;
-    outline: none;
     padding: 13px 50px;
     text-transform: uppercase;
     text-align: center;
