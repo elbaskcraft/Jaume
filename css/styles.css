@@ -1,0 +1,33 @@
+:root{
+    --purple: #310A90;
+    --white: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+    min-block-size: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+header button{
+    background-color: var(--purple);
+    border-radius: 4px;
+    border: none;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.25px;
+    outline: none;
+    padding: 13px 24px;
+    text-transform: uppercase;
+}
