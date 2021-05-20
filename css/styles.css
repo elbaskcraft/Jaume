@@ -1,3 +1,7 @@
+@import "./button.css";
+@import "./header.css";
+@import "./button-icon.css";
+
 :root{
     --fontBase: 'Poppins', sans-serif;
     --headline1: bold 95px/153.71px var(--fontBase);
@@ -28,29 +32,6 @@ h5, h4, h3, h2, h1, p{
     color: var(--purple);
 }
 
-button{
-    background: var(--purple);
-    border: none;
-    color: var(--white);
-    cursor: pointer;
-    outline: none;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-}
-
-header button{
-    border-radius: 4px;
-    font: var(--button);
-    letter-spacing: 1.25px;
-    padding: 13px 24px;
-    text-transform: uppercase;
-}
-
 main{
     margin: 32px 16px 55px 16px;
 }
@@ -74,20 +55,4 @@ main h3{
 main p{
     letter-spacing: 0.5px;
     margin-bottom: 16px;
-}
-
-.main__social{
-    display: flex;
-    gap: 16px;
-    padding-bottom: 24px;
-}
-
-main button{
-    border-radius: 4px;
-    font: var(--button);
-    letter-spacing: 1.25px;
-    padding: 13px 50px;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
 }

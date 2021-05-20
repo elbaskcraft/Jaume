@@ -9,9 +9,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<header class="header">
 		<img src="./assets/images/logo.webp" width="70px" height="20px" alt="Logo del Portafolio de Jaume"/>
-		<button>curr&iacute;culum</button>
+		<button class="button">curr&iacute;culum</button>
+		<button class="button button--is-secondary">curr&iacute;culum</button>
 	</header>
 	<main>
 		<img class="main__photo" src="./assets/images/user.webp" alt="Fotografia de Jaume">
@@ -19,12 +20,20 @@
 		<h3>Soy Jaume</h3>
 		<p>Frontend developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
 		<div class="main__social">
-			<img src="./assets/images/telefono.webp" alt="Icono de Telefono">
-			<img src="./assets/images/email.webp" alt="Icono de Correo Electronico">
-			<img src="./assets/images/instagram.webp" alt="Icono de Instagram">
-			<img src="./assets/images/twitter.webp" alt="Icono de Twitter">
+			<a class="button-icon" href="tel:7777777777">
+				<img src="./assets/images/icon-phone.svg" alt="Icono de Telefono">
+			</a>
+			<a class="button-icon" href="mail:portafoliodejaume@gmail.com">
+				<img src="./assets/images/icon-important_mail.svg" alt="Icono de Correo Electronico">
+			</a>
+			<a class="button-icon" href="#">
+				<img src="./assets/images/icon-instagram.svg" alt="Icono de Instagram">
+			</a>
+			<a class="button-icon" href="#">
+				<img src="./assets/images/icon-twitter.svg" alt="Icono de Twitter">
+			</a>
 		</div>
-		<button>descargar curr&iacute;culum</button>
+		<button class="button">descargar curr&iacute;culum</button>
 	</main>
 </body>
 </html>
