@@ -1,0 +1,37 @@
+.hero{
+    border: 1px solid red;
+}
+
+.hero-img{
+    text-align: center;
+}
+
+.hero-description{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-description h1{
+    font: var(--headline3);
+    margin: 0;
+}
+
+.hero-description p{
+    margin: 0;
+}
+
+.hero-description h1 span:first-child{
+    font: var(--headline5);
+    display: block;
+}
+
+.hero-description p{
+    letter-spacing: 0.5px;
+}
+
+.description-social{
+    display: flex;
+    gap: 16px;
+    padding-block-end: 24px;
+}

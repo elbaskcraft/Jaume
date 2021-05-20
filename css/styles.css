@@ -1,6 +1,7 @@
 @import "./button.css";
-@import "./header.css";
 @import "./button-icon.css";
+@import "./header.css";
+@import "./hero.css";
 
 :root{
     --fontBase: 'Poppins', sans-serif;
@@ -26,33 +27,5 @@ body{
     background: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
     font: var(--body1);
     min-block-size: 100vh;
-}
-
-h5, h4, h3, h2, h1, p{
     color: var(--purple);
-}
-
-main{
-    margin: 32px 16px 55px 16px;
-}
-
-main .main__photo{
-    width: 100%;
-}
-
-main h5{
-    font: var(--headline5);
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-main h3{
-    font: var(--headline3);
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-main p{
-    letter-spacing: 0.5px;
-    margin-bottom: 16px;
 }
