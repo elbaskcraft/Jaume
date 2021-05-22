@@ -3,6 +3,42 @@
     display: flex;
     block-size: 80px;
     justify-content: space-between;
-    padding: 0 16px;
     margin-block-end: 16px;
 }   
+
+.header nav{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        gap: 128px;
+        justify-content: flex-start;
+    }
+
+    .header > button{
+        display: none;
+    }
+
+    .header nav{
+        display: inline-block;
+    }
+
+    .header nav ol{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+    }
+
+    .header ol li a{
+        color: var(--white);
+        font: var(--button);
+        letter-spacing: 1.25px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .header ol li:first-child a{
+        color: var(--purple);
+    }
+}
