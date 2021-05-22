@@ -11,25 +11,30 @@
 	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-content">
+				<img src="./assets/images/logo.webp" width="70px" height="20px" alt="Logo del Portafolio de Jaume"/>
+				<button class="button">curr&iacute;culum</button>
+				<nav>
+					<ol>
+						<li>
+							<a href="#Presentacion">hola</a>
+						</li>
+						<li>
+							<a href="#Proyectos">proyectos</a>
+						</li>
+						<li>
+							<a href="#Contacto">hablemos</a>
+						</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</header>
 	<div class="wrapper">
-		<header class="header">
-			<img src="./assets/images/logo.webp" width="70px" height="20px" alt="Logo del Portafolio de Jaume"/>
-			<button class="button">curr&iacute;culum</button>
-			<nav>
-				<ol>
-					<li>
-						<a href="#">hola</a>
-					</li>
-					<li>
-						<a href="#">proyectos</a>
-					</li>
-					<li>
-						<a href="#">hablemos</a>
-					</li>
-				</ol>
-			</nav>
-		</header>
-		<section class="hero">
+		<section class="hero" id="Presentacion">
 			<div class="hero-img">
 				<img src="./assets/images/user.webp" width="328px" height="330px" alt="Fotografia de Jaume">
 			</div>
@@ -56,7 +61,7 @@
 				<a href="#" class="button">descargar curr&iacute;culum</a>
 			</div>
 		</section>
-		<section class="message">
+		<section class="message" id="Proyectos">
 			<p>A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e incre&iacute;bles</p>
 			<p>Aqu&iacute; hay algunos que me gustar&iacute;a compartir.</p>
 			<img src="./assets/images/arrow-down.webp" width="80px" height="80px" alt="Imagen de flecha"/>
@@ -123,7 +128,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact">
+		<section class="contact" id="Contacto">
 			<p>hablemos</p>
 			<p>Si est&aacute; interesado en trabajar conmigo en su pr&oacute;ximo proyecto, no dude en ponerse en contacto conmigo.</p>
 			<form class="contact-form">

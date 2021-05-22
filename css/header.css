@@ -1,4 +1,10 @@
 .header{
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+.header-content{
     align-items: center;
     display: flex;
     block-size: 80px;
@@ -6,31 +12,31 @@
     margin-block-end: 16px;
 }   
 
-.header nav{
+.header-content nav{
     display: none;
 }
 
 @media screen and (min-width: 768px){
-    .header{
+    .header-content{
         gap: 128px;
         justify-content: flex-start;
     }
 
-    .header > button{
+    .header-content > button{
         display: none;
     }
 
-    .header nav{
+    .header-content nav{
         display: inline-block;
     }
 
-    .header nav ol{
+    .header-content nav ol{
         display: flex;
         gap: 40px;
         list-style: none;
     }
 
-    .header ol li a{
+    .header-content ol li a{
         color: var(--white);
         font: var(--button);
         letter-spacing: 1.25px;
@@ -38,7 +44,7 @@
         text-transform: uppercase;
     }
 
-    .header ol li:first-child a{
+    .header-content ol li:first-child a{
         color: var(--purple);
     }
 }
