@@ -17,7 +17,7 @@
 }
 
 .references-item p:nth-of-type(2){
-    color: #310A90;
+    color: var(--purple);
     font: var(--caption);
     letter-spacing: 0.4px;
     text-transform: uppercase;
@@ -26,4 +26,25 @@
 
 .references-item img{
     margin-block-start: 24px;
+}
+
+@media screen and (min-width: 768px){
+    .references-item{
+        max-width: 1132px;
+        text-align: center;
+    }
+
+    .references-item img{
+        width: 80px;
+        height: 80px
+    }
+
+    .references-item p:nth-of-type(1){
+        font: var(--headline4);
+    }
+
+    .references-item p:nth-of-type(2){
+        font: var(--headline5);
+        margin-inline: auto;
+    }
 }

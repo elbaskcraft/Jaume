@@ -1,0 +1,82 @@
+.project-item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-image{
+    text-align: center;
+}
+
+.project-image img{
+    margin-block-end: 30px;
+}
+
+.project-description a{
+    text-decoration: none;
+}
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-description p{
+    margin-inline: 0;
+}
+
+.project-description > a:nth-of-type(1){
+    align-self: flex-start;
+    background: var(--purple);
+    box-shadow: -4px 4px 0px var(--white);
+    color: var(--white);
+    font: var(--headline5);
+    padding-block: 4px;
+    padding-inline: 8px;
+}
+
+.description-links{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-description a:nth-of-type(2){
+    margin-block-start: 8px;
+}
+
+@media screen and (min-width: 768px){
+    .project-item{
+        align-items: center;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: space-between;
+        padding-block: 80px;
+    }
+
+    .project-description{
+        max-width: 450px;
+    }
+
+    .project-image img{
+        max-inline-size: 100%;
+        height: auto;
+        margin-block-end: 0px;
+    }
+
+    .description-links{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .description-links a:nth-child(2){
+        margin-block-start: 0px;
+    }
+
+    .project-wrapper:nth-child(odd) .project-image{
+        order: 2;
+        flex: 1;
+    }
+}
