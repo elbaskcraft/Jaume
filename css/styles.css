@@ -2,10 +2,13 @@
 @import "./button-icon.css";
 @import "./header.css";
 @import "./hero.css";
+@import "./message.css";
+@import "./references.css";
 @import "./wrapper.css";
 
 :root{
     --fontBase: 'Poppins', sans-serif;
+    --oxygenFont: 'Oxygen', sans-serif;
     --headline1: bold 95px/153.71px var(--fontBase);
     --headline2: bold 59px/95.46px var(--fontBase);
     --headline3: bold 48px/77.66px var(--fontBase);
@@ -15,6 +18,7 @@
     --body2: 400 14px/22.65px var(--fontBase);
     --button: bold 14px/22.65px var(--fontBase);
     --caption: 400 12px/19.42px var(--fontBase);
+    --oxygen: 700 16px/25.89px var(--oxygenFont);
     --purple: #310A90;
     --green: #42E2B8;
     --white: #FFFFFF;

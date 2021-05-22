@@ -1,0 +1,23 @@
+.message{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-block-start: 40px;
+    text-align: center;
+}
+
+.message p{
+    margin: 0;
+}
+
+.message p:first-child{
+    font: var(--headline5);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.message p:nth-child(2){
+    font: var(--headline5);
+    font-weight: 700;
+}
